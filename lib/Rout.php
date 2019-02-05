@@ -1,5 +1,7 @@
 <?php
 
+require_once ROOT . '/controllers/Controller.php';
+
 class Rout
 {
     private $method;
@@ -32,28 +34,30 @@ class Rout
     public function execute()
     {
 
+        if ($_SERVER['REQUEST_URI'] == '/') {
+            header("Location:/users");
+        } else
+            if (strpos($this->request, '{') !== false) {
 
-        if (strpos($this->request, '{') !== false) {
+                $paths = explode('/', $_SERVER['PATH_INFO']);
+                $requests = explode('/', $this->request);
 
-            $paths = explode('/', $_SERVER['PATH_INFO']);
-            $requests = explode('/', $this->request);
+                if ($paths[1] == $requests[1]) {
 
-            if ($paths[1] == $requests[1]) {
+                    $controller = new Controller();
+                    $function = $this->getAction();
+                    $id = $paths[2];
+                    $controller->$function($id);
+                }
+
+
+            } else if ($this->compare()) {
+
 
                 $controller = new Controller();
                 $function = $this->getAction();
-                $id = $paths[2];
-                $controller->$function($id);
+                $controller->$function();
             }
-
-
-        } else if ($this->compare()) {
-
-
-            $controller = new Controller();
-            $function = $this->getAction();
-            $controller->$function();
-        }
 
     }
 
