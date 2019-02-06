@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc8b560d-1f70-4258-9154-b586985a2c46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/edit_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/edit_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/login_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,10 +60,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/view/edit_user.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="553">
+                <state relative-caret-position="469">
                   <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
                 </state>
               </provider>
@@ -120,10 +118,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/DB.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="850">
+                <state relative-caret-position="748">
                   <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
                 </state>
               </provider>
@@ -133,7 +131,7 @@
             <entry file="file://$PROJECT_DIR$/lib/Model.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1666">
-                  <caret line="98" column="59" selection-start-line="98" selection-start-column="59" selection-end-line="98" selection-end-column="59" />
+                  <caret line="101" selection-start-line="101" selection-end-line="101" />
                 </state>
               </provider>
             </entry>
@@ -151,11 +149,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/Model.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="74" selection-start-line="74" selection-end-line="74" />
+                <state relative-caret-position="289">
+                  <caret line="100" column="85" selection-start-line="100" selection-start-column="85" selection-end-line="100" selection-end-column="85" />
                 </state>
               </provider>
             </entry>
@@ -182,7 +180,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/view/sign_up.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="327">
@@ -222,10 +220,10 @@
         <option value="$PROJECT_DIR$/view/all_users.php" />
         <option value="$PROJECT_DIR$/controllers/Controller.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/lib/Model.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/view/login_page.php" />
         <option value="$PROJECT_DIR$/view/edit_user.php" />
+        <option value="$PROJECT_DIR$/lib/Model.php" />
       </list>
     </option>
   </component>
@@ -317,12 +315,12 @@
       <updated>1549311559775</updated>
       <workItem from="1549311561907" duration="5027000" />
       <workItem from="1549321145888" duration="36719000" />
-      <workItem from="1549410760737" duration="779000" />
+      <workItem from="1549410760737" duration="1786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42525000" />
+    <option name="totallyTimeSpent" value="43532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="743" extended-state="6" />
@@ -421,13 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Rout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -438,7 +429,7 @@
     <entry file="file://$PROJECT_DIR$/controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
-          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
           <folding>
             <element signature="n#getView#0;n#Controller#0;n#!!top" />
             <element signature="n#setModel#0;n#Controller#0;n#!!top" />
@@ -450,13 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" column="59" selection-start-line="98" selection-start-column="59" selection-end-line="98" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -476,15 +460,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/sign_up.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="84" column="12" selection-start-line="84" selection-end-line="85" />
+        <state relative-caret-position="327">
+          <caret line="84" selection-start-line="84" selection-end-line="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/edit_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
+        <state relative-caret-position="469">
           <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="100" column="85" selection-start-line="100" selection-start-column="85" selection-end-line="100" selection-end-column="85" />
         </state>
       </provider>
     </entry>

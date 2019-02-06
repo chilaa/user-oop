@@ -96,7 +96,10 @@ class Model
 
     public function updateUser($id)
     {
-        $passwordHash = password_hash($_POST['password'], 1);
+        if (isset($_POST['password']) && $_POST['password'] !== '') {
+            $passwordHash = password_hash($_POST['password'], 1);
+        } else $passwordHash = $this->database->fetchSingleDataById($id)['password'];
+
         $query = sprintf("update register set  userName='%s', password='%s',  name='%s' where id=$id ;",
             $_POST['userName'], $passwordHash, $_POST['name']);
         return $this->database->updateUser($query);
