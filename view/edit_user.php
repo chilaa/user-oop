@@ -19,12 +19,16 @@
             <label class="control-label col-sm-2" for="userName">Username:</label>
             <div class="col-sm-10">
                 <input type="text" value="<?php echo $data['userName'] ?>" class="form-control" id="userName" placeholder="Enter UserName" name="userName">
+                <h4 style="border-radius: 5px; padding: 10px" id="usernameStatus">Status:</h4>
+
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-2" for="password">Password:</label>
             <div class="col-sm-10">
                 <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                <h4 style="border-radius: 5px;  padding: 10px" id="passwordStatus">Status:</h4>
+
             </div>
         </div>
 
@@ -41,9 +45,11 @@
             </div>
         </div>
     </form>
-    <a href="" onclick="deleteUser(<?php echo $data['id'] ?> )" >Delete User</a>
+    <a href="" class="btn btn-danger" onclick="deleteUser(<?php echo $data['id'] ?> )" >Delete User</a>
 
 </div>
 <script src="/js/delete.js"></script>
+
+<script src="/js/registration.js"></script>
 </body>
 </html>
