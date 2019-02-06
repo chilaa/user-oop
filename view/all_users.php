@@ -19,7 +19,10 @@
 </head>
 <body>
 
-<h1>All users</h1>
+<span style="font-size: 50px">All users</span>
+<span style="float: right; padding: 20px; font-size: 20px">Signed in as
+    <a class="btn btn-default" href="/editUser/<?php echo $_SESSION['userName']?>">
+    <?php echo $_SESSION['userName']?></a></span>
 
 
 <table class="table table-hover table-striped">
