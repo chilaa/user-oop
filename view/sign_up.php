@@ -70,7 +70,6 @@
     </style>
 </head>
 <body>
-
 <form action="/addToDB" method="post">
     <div class="container">
         <h1>Register</h1>

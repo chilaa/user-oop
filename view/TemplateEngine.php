@@ -1,5 +1,7 @@
 <?php
 
+namespace view;
+
 class TemplateEngine
 {
     private $dir = ROOT . '/view/';

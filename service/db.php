@@ -1,11 +1,12 @@
 <?php
 
+namespace service;
 
 class db
 {
     private $pdo;
 
-    public function __construct(PDO $pdo)
+    public function __construct(\PDO $pdo)
     {
         $this->pdo = $pdo;
     }
@@ -23,14 +24,14 @@ class db
     {
         $statement = $this->pdo->prepare('SELECT * FROM register WHERE id = :id');
         $statement->execute(array('id' => $id));
-        return $statement->fetch(PDO::FETCH_ASSOC);
+        return $statement->fetch(\PDO::FETCH_ASSOC);
     }
 
     public function fetchSingleDataByName($name)
     {
         $statement = $this->pdo->prepare('SELECT * FROM register WHERE userName=:username');
         $statement->execute(array('username' => $name));
-        return $statement->fetch(PDO::FETCH_ASSOC);
+        return $statement->fetch(\PDO::FETCH_ASSOC);
 
     }
 
@@ -51,7 +52,7 @@ class db
         return $statement=$this->pdo->query($query);
     }
     /**
-     * @return PDO
+     * @return \PDO
      */
     public function getPdo()
     {
@@ -59,9 +60,9 @@ class db
     }
 
     /**
-     * @param PDO
+     * @param \PDO
      */
-    public function setPdo(PDO $pdo)
+    public function setPdo(\PDO $pdo)
     {
         $this->pdo = $pdo;
     }

@@ -4,7 +4,19 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 define('ROOT', __DIR__);
-require_once ROOT . '/lib/Rout.php';
+
+require_once ROOT . "/vendor/autoload.php";
+
+//
+//spl_autoload_register(function ($className) {
+//    $path = ROOT . '/' . str_replace('\\', '/', $className) . ".php";
+//    if (file_exists($path)) {
+//        require_once $path;
+//    }
+//});
+
+use service\Rout;
+
 
 $rout = new Rout();
 $rout->route('GET', '/signIn', 'signIn');

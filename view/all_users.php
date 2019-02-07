@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<span style="font-size: 50px">All users</span>
+<span style="font-size: 40px; padding: 15px">All users</span>
 <span style="float: right; padding: 20px; font-size: 20px">Signed in as
     <a class="btn btn-default" href="/editUser/<?php echo $_SESSION['userName']?>">
     <?php echo $_SESSION['userName']?></a></span>
@@ -54,6 +54,7 @@
     <?php endforeach; ?>
     </tbody>
 </table>
+
 <br/>
 <a class="btn btn-success" href="/signUp">Add new user</a>
 <a class="btn btn-danger" href="/logOut">Log Out</a>

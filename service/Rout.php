@@ -1,6 +1,8 @@
 <?php
 
-require_once ROOT . '/controllers/Controller.php';
+namespace service;
+
+use controller\Controller;
 
 class Rout
 {

@@ -1,7 +1,7 @@
 <?php
 
-require_once ROOT . '/lib/DB.php';
-require_once ROOT . '/lib/DB.php';
+namespace service;
+
 
 class Model
 {
@@ -83,15 +83,25 @@ class Model
             $_POST['userName'], $passwordHash, $_POST['name']);
         $status = $this->database->addToDB($query);
         if ($status) {
-            header('Location:/signIn');
-        } else header("Location:/signUp?status=error");
+            session_start();
+//            echo ($_SESSION['userName']);die;
+            unset($_SESSION['userName']);
+
+            $_SESSION['userName']=$_POST['userName'];
+            header('Location:/users');
+        } else {
+
+            header("Location:/signUp", true , 400);
+        }
     }
 
     public function modelDeleteUser($id)
     {
         $query = "delete from register where id = $id";
         $status = $this->database->deleteUser($query);
+        $statusCode = 200;
         return $status;
+
     }
 
     public function updateUser($id)
@@ -106,25 +116,25 @@ class Model
     }
 
     /**
-     * @return PDO
+     * @return \PDO
      */
     public function getPDO()
     {
         if ($this->pdo === null) {
-            $this->pdo = new PDO(
+            $this->pdo = new \PDO(
                 $this->configuration['db_dsn'],
                 $this->configuration['db_user'],
                 $this->configuration['db_pass']
             );
 
-            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         }
 
         return $this->pdo;
     }
 
     /**
-     * @return PDO object
+     * @return \PDO object
      */
     public function getDatabase()
     {
@@ -132,7 +142,7 @@ class Model
     }
 
     /**
-     * @param PDO $database
+     * @param \PDO $database
      */
     public function setDatabase($database)
     {

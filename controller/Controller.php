@@ -1,7 +1,9 @@
 <?php
 
-require_once ROOT . '/view/TemplateEngine.php';
-require_once ROOT . '/lib/Model.php';
+namespace controller;
+ 
+use view\TemplateEngine;
+use service\Model;
 
 class Controller
 {
